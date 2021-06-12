@@ -1,34 +1,137 @@
-<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <link href="styles.css" rel="stylesheet">
-        <script>
-            function greet()
-            {
-                let name = document.querySelector("#name").value;
-                if (name === "")
-                {
-                    name = "world";
-                }
-                document.querySelector("#result").innerHTML = "Hello, " + name + "!";
-            }
-        </script>
-        <title>Homepage</title>
-    </head>
-    <body>
-        <div class="content">
-            <h1>Welcome To My Web Page</h1><br>
-            <div>
-                <h2 id="result">Hello, world!</h2>
-            </div>
-            <form onsubmit="greet(); return false;">
-                <input id="name" type="text" autofocus autocomplete="off" placeholder="What is your name?">
-                <input type="submit">
-            </form><br>
-            <h3>My name is Dalvinderjit Singh and I am an aspiring web developer. This web page is made to host my projects and serve as my portfolio.</a>.
-            </h3>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        /* Hide Menu on Scroll */
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } else {
+            document.getElementById("navbar").style.top = "-102px";
+        }
+        prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <title>Dalvinderjit Singh's Portfolio</title>
+</head>
+<body>
+
+    <!-- START NAVBAR --> 
+    
+    <header id="navbar">
+        <div class="nav-wrapper header-nav-padding">
+            <nav class="nav-flex">
+                <ul>
+                    <li>
+                        <a href="https://dalvinderjitsingh.github.io/" 
+                        target="_blank">Dalvinderjit Singh</a>
+                    </li>
+                </ul>
+        
+                <ul class="header-nav-right-ul">
+                    <li>
+                        <a href="https://dalvinderjitsingh.github.io/projects"
+                        target="_blank">Projects</a>
+                    </li>
+                    <li>
+                        <a href="https://dalvinderjitsingh.github.io/blog"
+                        target="_blank">Blog</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </body>
+    </header>
+        
+    <!-- END NAVBAR -->
+
+    <main>
+
+        <!-- START WELCOME SECTION -->
+
+        <section class="welcome-section">
+            <h1>Hello, world! &#128075;</h1>
+            <h2>My name is Dalvinderjit Singh and I am a software developer from Malaysia.</h2><br>
+            <h2>Connect with me on <a href="https://github.com/dalvinderjitsingh" target="_blank">GitHub</a>, <a href="https://www.linkedin.com/in/dalvinderjit-singh-a40b511b7/" target="_blank">LinkedIn</a>, and <a href="https://twitter.com/dalvinderjit01" target="_blank">Twitter</a>.</h2>
+        </section>  
+
+        <!-- END WELCOME SECTION -->
+
+        <!-- START PROJECTS SECTION -->
+
+        <section class="projects-section">
+            <h1>My Projects</h2>
+            <div class="projects-grid">
+                <a 
+                    href="https://dalvinderjitsingh.github.io/freeCodeCamp-projects"
+                    target="_blank"
+                    class="project-tile"
+                >
+                    <h3 class="project-title">freeCodeCamp Projects</h3>
+                </a>
+
+                <a 
+                    href="https://dalvinderjitsingh.github.io/frontend-mentor-challenges"
+                    target="_blank"
+                    class="project-tile"
+                >
+                    <h3 class="project-title">Frontend Mentor Solutions</h3>
+                </a>
+            </div>
+        </section>
+            
+        <!-- END PROJECTS SECTION -->
+
+    </main>
+
+    <!-- START FOOTER -->
+
+    <footer>
+        <div class="nav-wrapper">
+            <nav class="nav-flex">
+                <ul>
+                    <li class="footer-heading-li">
+                        <h4 class="footer-heading-1">Dalvinderjit Singh</h4>
+                        
+                        <img class="flag-icon" src="https://www.countryflags.io/MY/flat/48.png" alt="Flag of Malaysia"/>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="footer-heading-li">
+                        <h4 class="footer-heading-2">Social</h4>
+                    </li>
+                    <li>
+                        <a  href="https://github.com/dalvinderjitsingh"
+                        target="_blank"
+                        class="btn social-details">
+                        <i class="fa fa-github"></i> GitHub</a>
+                    </li>
+                    <li>
+                        <a  href="https://www.linkedin.com/in/dalvinderjit-singh-a40b511b7/"
+                        target="_blank"
+                        class="btn social-details"
+                        ><i class="fa fa-linkedin"></i> LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/dalvinderjit01"
+                        target="_blank"
+                        class="btn social-details"
+                        ><i class="fa fa-twitter"></i> Twitter</a>    
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- END FOOTER -->
+
+</body>
 </html>
