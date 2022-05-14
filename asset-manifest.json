@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8261df7d.css",
+    "main.js": "/static/js/main.cb07e0ab.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/markdown-previewer-screenshot.jpg": "/static/media/markdown-previewer-screenshot.7baff0d04d26e0d36e76.jpg",
+    "static/media/profile-picture.jpg": "/static/media/profile-picture.10a03daa076aed448964.jpg",
+    "static/media/speed-typing-game-screenshot.jpg": "/static/media/speed-typing-game-screenshot.779cd8bb48f90e41d433.jpg",
+    "static/media/random-quote-machine-screenshot.jpg": "/static/media/random-quote-machine-screenshot.a45a04f04997759ebd79.jpg",
+    "static/media/25-plus-5-clock-screenshot.jpg": "/static/media/25-plus-5-clock-screenshot.f9b2fcb8033ddbc680d5.jpg",
+    "static/media/drum-machine-screenshot.jpg": "/static/media/drum-machine-screenshot.11ab26d3434adbdc96d6.jpg",
+    "static/media/calculator-screenshot.jpg": "/static/media/calculator-screenshot.a44678f5e490ba0a7240.jpg",
+    "index.html": "/index.html",
+    "main.8261df7d.css.map": "/static/css/main.8261df7d.css.map",
+    "main.cb07e0ab.js.map": "/static/js/main.cb07e0ab.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8261df7d.css",
+    "static/js/main.cb07e0ab.js"
+  ]
+}
